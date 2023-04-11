@@ -90,3 +90,72 @@ float(bubble)
 print(bubble)
 fun = bubble + 32
 print(fun)
+
+largest_so_far = 5
+print ("Before", largest_so_far)
+for the_num in [2,4,9,10,6,55]:
+    if the_num > largest_so_far:
+        largest_so_far = the_num
+    print(largest_so_far,the_num)
+print ("After" , largest_so_far)
+
+kids = ["Jenna", "Robert", "Mason"]
+for kid in kids :
+    print("Happy birthday", kid)
+print("Now let's sing!")
+
+while True :
+    line = input (">" ) 
+    if line == "done" :
+     break
+    print(line)
+print("Done")
+
+smallest_so_far = 5
+print ("Before", smallest_so_far)
+for the_num in [7,4,9,13,3,-12]:
+    if the_num < smallest_so_far:
+        smallest_so_far = the_num
+    print(smallest_so_far,the_num)
+print ("After" , smallest_so_far)
+
+#adding everything
+sum=0
+print("Before", sum)
+for it in [12,36,35] :
+    sum = sum + it
+    print(sum , it)
+print("After", sum)
+
+#finding the average
+count=0
+sum=0
+print (sum,count)
+for total in [45,67,90,99,85] :
+    count = count + 1
+    sum= sum + total
+print(sum, count)
+float(sum)
+average = (sum//count)
+print(average)
+
+#filtering
+print("Start")
+for value in [8,16,24,26] :
+    if value >= 10 :
+        print("Large # ", value)
+print("Done")
+
+#Boolean  
+found = False
+print(found)
+for value in [4,6,8,9,8,2] :
+    if value ==2 :
+        print(found,value)
+        break
+        found=True
+    
+print(found)
+
+#this is taking forever!!!
+  
