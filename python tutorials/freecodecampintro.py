@@ -44,9 +44,9 @@ print("One " + drink + " coming right up!")
 print("\n")
 
 #takes input and adds 1 with a statement using your answer
-ef=input("What floor are you on in europe? ")
-usf=int(ef)+1
-print("You would be on floor",usf,"if you were in the USA.")
+ef = input("What floor are you on in europe? ")
+usf = int(ef)+1
+print("You would be on floor", usf ,"if you were in the USA.")
 
 print("\n")
 
@@ -84,12 +84,11 @@ rtlsnk = min("It's a smol boy.")
 print(rattlesnake)
 print(rtlsnk)
 
-bubble="42"
-type(bubble)
-float(bubble)
-print(bubble)
-fun = bubble + 32
-print(fun)
+#bubble="42"
+#float(bubble)
+#print(bubble)
+#fun = bubble + 32
+#print(fun)
 
 largest_so_far = 5
 print ("Before", largest_so_far)
@@ -151,11 +150,67 @@ found = False
 print(found)
 for value in [4,6,8,9,8,2] :
     if value ==2 :
-        print(found,value)
-        break
         found=True
-    
+        print( found, value)
 print(found)
 
 #this is taking forever!!!
+
+smallest_so_far = None
+print("Start")
+for value in [9, 41, 12, 3, 74,15] :
+    if smallest_so_far is None :
+        smallest_so_far = value
+    elif value < smallest_so_far :
+        smallest_so_far = value
+    print (smallest_so_far, value)
+print("End", smallest_so_far)
+
+word = "super-duper"
+print(word)
+count = 0
+for letter in word :
+    if letter == "e" :
+        count = count +1
+print("This word has" , count , " e's inside of it!")
   
+line="Please kiss my dear aunt sally."
+print(line.startswith("P"))
+
+data="skyefi21@gmail.com"
+atpos=data.find("@")
+print(atpos)
+cpos=data.find("C",atpos)
+print(cpos)
+
+Tasks = [2,89,5,6,20,35]
+print(Tasks)
+Tasks[2]= 7
+print(Tasks)
+print(len(Tasks))
+
+#concantenating lists
+a = [15,62,33]
+b = [16,63,34]
+c = a + b
+print(c)
+
+#slicing lists
+#t = [9,8,7,32,19]
+#t = [0:2]
+#print(t)
+
+#create empty list and mess with it
+Watched = list()
+Watched.append("Say I Love you")
+Watched.append("Gundam Iron Blooded Orphans")
+Watched.append("No Game No Life")
+print(Watched)
+Watched.remove("No Game No Life")
+Watched.append("Sword Art Online")
+Watched.append(7)
+print(Watched)
+if 7 in Watched:
+    print("That's a number in your anime list.")
+Watched.sort()
+print(Watched)
