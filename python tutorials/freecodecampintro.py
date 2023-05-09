@@ -27,11 +27,11 @@ print(var3)
 print("\n")
 
 #asks what your age is at the bar
-x=input("What's your age?")
-x=int(x)
-if x >= 21:
+a=input("What's your age?")
+a=int(a)
+if a >= 21:
     print("What would you like to drink?")
-if x < 21:
+if a < 21:
     print("Sorry, I'm unable to serve you.")
     exit()
 
@@ -210,7 +210,13 @@ Watched.remove("No Game No Life")
 Watched.append("Sword Art Online")
 Watched.append(7)
 print(Watched)
-if 7 in Watched:
-    print("That's a number in your anime list.")
-Watched.sort()
-print(Watched)
+#if 7 in Watched:
+    #print("That's a number in your anime list.")
+#Watched.sort()
+#print(Watched)
+
+counter = dict()
+candy = ["M&M","Kit-Kat","M&M","Reese's Peanut Butter Cups","Jolly Rancher"]
+for amount in candy :
+    candy[amount] = candy.get(amount,0) + 1
+print(counter)
