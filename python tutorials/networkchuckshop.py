@@ -7,7 +7,8 @@ if name == "Ben" :
     if evil_status == "Yes" :
         print("You're not welcome here.  Get out Evil Ben!")
     exit()
-    else print("Congrats on being good!")
+    #else print("Congrats on being good!")
+    #this is commented out because it broke the program
 else :
     print("Hello " + name + ",thank you so much for coming in today. \n\n\n")
 
