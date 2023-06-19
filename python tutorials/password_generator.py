@@ -16,3 +16,4 @@ for i in range(pwd_length):
     pwd+= ' '.join(secrets.choice(alphabet))
 
 print(pwd)
+#need to make a gui
